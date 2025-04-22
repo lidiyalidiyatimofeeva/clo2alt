@@ -1,0 +1,53 @@
+# Конфигурация для системы клоакинга
+# on = включено, off = выключено
+
+# Общие настройки
+TelegramReporting=on
+
+# Настройки для ПК
+[Desktop]
+# Основные проверки
+CheckSearchBots=on
+CheckHeadlessBrowser=on
+CheckYandexModerator=on
+CheckYandexBot=on
+CheckIpBlacklist=on
+CheckDevTools=off
+CheckMouseMovement=on
+CheckVisitFrequency=on
+
+# Временные параметры
+MouseMovementTimeout=5000
+RedirectDelay=1000
+
+# Параметры блокировки по частоте
+MaxVisitsBeforeBlock=5
+BlockDuration=3600000
+
+# Настройки для мобильных устройств
+[Mobile]
+# Основные проверки
+CheckSearchBots=on
+CheckHeadlessBrowser=on
+CheckYandexModerator=on
+CheckYandexBot=on
+CheckIpBlacklist=on
+CheckDevTools=off
+CheckMouseMovement=off
+CheckVisitFrequency=off
+
+# Временные параметры
+RedirectDelay=1000
+
+# Параметры блокировки по частоте
+MaxVisitsBeforeBlock=10
+BlockDuration=3600000
+
+# Экспериментальные настройки (отключены по умолчанию)
+[Experimental]
+CheckAdBlocker=off
+CheckVirtualMachine=off
+CheckTorNetwork=off
+CheckVPN=off
+PerformTimingAttacks=off
+CheckWebRTCLeakage=off
